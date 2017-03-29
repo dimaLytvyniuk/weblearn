@@ -1,0 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: rgb(1,254,135);
+    width: 100%;
+    position: fixed;
+}
