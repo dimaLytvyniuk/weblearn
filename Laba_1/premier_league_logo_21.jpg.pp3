@@ -63,7 +63,7 @@ TransmissionCurve=1;0;0.5;0.34999999999999998;0.34999999999999998;0.599999999999
 GainTransmissionCurve=1;0;0.10000000000000001;0.34999999999999998;0;0.25;0.25;0.34999999999999998;0.34999999999999998;0.69999999999999996;0.25;0.34999999999999998;0.34999999999999998;1;0.10000000000000001;0;0;
 
 [Channel Mixer]
-Red=100;0;0;
+Red=95;97;0;
 Green=0;100;0;
 Blue=0;0;100;
 
@@ -150,7 +150,7 @@ Uniformity=50
 [White Balance]
 Setting=Camera
 Temperature=6490
-Green=1.0019899871615525
+Green=1.002
 Equal=1
 
 [Color appearance]
@@ -239,8 +239,8 @@ Radius=40
 Enabled=false
 X=0
 Y=0
-W=1600
-H=820
+W=1000
+H=772
 FixedRatio=true
 Ratio=3:2
 Orientation=As Image
@@ -297,7 +297,7 @@ CenterY=0
 
 [Resize]
 Enabled=false
-Scale=0.56000000000000005
+Scale=0.90000000000000002
 AppliesTo=Cropped area
 Method=Lanczos
 DataSpecified=3
@@ -535,3 +535,9 @@ CcSteps=0
 PreBlackRed=0
 PreBlackGreen=0
 PreBlackBlue=0
+
+[IPTC]
+Caption=PL_Logos_Colours;
+Headline=PL_Logos_Colours;
+Keywords=
+SupplementalCategories=

@@ -3,8 +3,72 @@
     padding: 0;
 }
 
-.header {
+body {
     background-color: rgb(1,254,135);
+    font-family: 'Comfortaa', cursive;
+}
+
+.header {
+   background-color: rgb(255,1,91);
     width: 100%;
     position: fixed;
+    overflow-y: auto;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
+
+#logo {
+    width: 250;
+    height: 120;
+    display: block;
+    margin: 0 auto;
+}
+.main-part {
+    position: relative;
+    top: 120px;
+    z-index:999;
+    box-sizing: border-box;
+}
+
+.menu {
+    background-color: red;
+    float: left;
+    width: 20%;
+    min-height: 300px;
+}
+
+.big-block {
+    float: right;
+    width: 80%;
+    min-height: 300px;
+}
+.first-block {
+   background-color: yellow;
+   width: 100%;
+}
+
+.content {
+    background-color: white;
+    float: left;
+    width: 60%;
+}
+
+.second-block {
+    background-color: blue;
+    float: right;
+    width: 40%;
+}
+
+footer {
+    background-color: violet;
+
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+

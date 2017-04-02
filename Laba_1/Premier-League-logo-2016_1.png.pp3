@@ -150,7 +150,7 @@ Uniformity=50
 [White Balance]
 Setting=Camera
 Temperature=6490
-Green=1.0019899871615525
+Green=1.002
 Equal=1
 
 [Color appearance]
@@ -239,8 +239,8 @@ Radius=40
 Enabled=false
 X=0
 Y=0
-W=1600
-H=820
+W=225
+H=289
 FixedRatio=true
 Ratio=3:2
 Orientation=As Image
@@ -297,7 +297,7 @@ CenterY=0
 
 [Resize]
 Enabled=false
-Scale=0.56000000000000005
+Scale=3.1099999999999999
 AppliesTo=Cropped area
 Method=Lanczos
 DataSpecified=3
@@ -489,7 +489,7 @@ Autosat=true
 OpacityCurve=1;0;0.29999999999999999;0.34999999999999998;0;0.25;0.80000000000000004;0.34999999999999998;0.34999999999999998;0.69999999999999996;0.80000000000000004;0.34999999999999998;0.34999999999999998;1;0.29999999999999999;0;0;
 ColorCurve=1;0.050000000000000003;0.62;0.25;0.25;0.58499999999999996;0.11;0.25;0.25;
 SatProtectionThreshold=0
-SaturatedOpacity=1
+SaturatedOpacity=0
 Strength=50
 HighlightsColorSaturation=60;80;
 ShadowsColorSaturation=80;208;
