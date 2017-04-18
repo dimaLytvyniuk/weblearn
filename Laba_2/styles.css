@@ -1,3 +1,23 @@
+@font-face {
+    font-family: 'Comfortaa-Regular';
+    src: url('fonts/Comfortaa-Regular.ttf'); 
+}
+
+@font-face {
+    font-family: 'Indie Flower';
+    src: url('fonts/IndieFlower.ttf'); 
+}
+
+@font-face {
+    font-family: 'Comfortaa-Light';
+    src: url('fonts/Comfortaa-Light.ttf'); 
+}
+
+@font-face {
+    font-family: 'Comfortaa-Bold';
+    src: url('fonts/Comfortaa-Bold.ttf'); 
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -5,10 +25,10 @@
 
 body {
     background-color: rgb(1,254,135);
-    font-family: 'Comfortaa', cursive;
     overflow: auto;
     width: 100%;
     height: 100%;
+    font-family: 'Comfortaa-Regular',cursive;
 }
 
 .header {
@@ -35,7 +55,7 @@ body {
 @media screen and (min-width: 800px) {
     .menu {
         background-color: white;
-        width: 226px;
+        width: 150px;
         height: 300px;
         margin-top: 25px;
         margin-left: 25px;
@@ -55,8 +75,8 @@ body {
         /*padding: 40px 25px 40px 25px;*/
         padding-top: 40px;
         list-style: none;
-        width: 226px;
-        height: 340;    
+        width: 150px;
+        height: 340px;    
     }
 
     .main-menu li {
@@ -69,21 +89,16 @@ body {
         padding: 8px 14px;
         text-decoration: none;
         color: rgb(255,1,91);
-        font-size: 21px;
+        font-size: 19px;
     }
 
     .big-block {
-        width: 85%;
+        width: 90%;
         display: flex;
         flex-direction: column;
         height: 92vh;
         min-height: 80px;
         margin-left: 20px;
-    }
-
-    .first-block {
-    height: 10vh;
-    min-height: 25px;
     }
 
     .content {
@@ -123,6 +138,8 @@ body {
     }
 }
 
+
+
 @media screen and (max-width: 800px) {
     .menu {
         /*background-color: white;
@@ -156,7 +173,7 @@ body {
         text-align: center;
         display: inline-block;
         font-size: 14px;
-        margin: 16px 20px;
+        margin: 16px 12px;
         text-transform: uppercase;
     }
 
@@ -174,11 +191,6 @@ body {
         margin-left: 20px;
         top: 50px;
         position: relative;
-    }
-
-    .first-block {
-        height: 10vh;
-        min-height: 25px;
     }
 
     .content {
@@ -216,6 +228,32 @@ body {
     .chess td{
         width: 4vh;
         height: 4vh;
+    }
+}
+
+@media screen and (min-width: 1050px) {
+    .logos-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .first-block {
+        height: 10vh;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .logos-container {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .logos-half div {
+        width: 60px;
+    }
+
+    .first-block {
+        height: 15vh;
     }
 }
 
@@ -311,4 +349,47 @@ footer div {
 
 .first-block {
     box-sizing: border-box;
+}
+
+.logos-container {
+    display: flex;
+}
+
+.logos-half {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-grow: 1;
+    margin-top: 12px;
+}
+
+.menu-box {
+    font-family: 'Comfortaa-Regular';
+}
+
+.team-table {
+    font-size: 12px;
+}
+
+.team-table td {
+    height: 28px;
+}
+
+.team-table tr{
+    border-bottom: 0.5px solid grey;
+}
+
+.num-stat,
+.games-stat,
+.points-stat
+ {
+    width: 25px;
+}
+
+.logo-stat {
+    width: 30px;
+}
+
+.name-stat {
+    width: 100px;
 }
