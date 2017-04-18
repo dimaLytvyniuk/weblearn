@@ -82,7 +82,7 @@ body {
     }
 
     .first-block {
-    height: 16vh;
+    height: 10vh;
     min-height: 25px;
     }
 
@@ -235,33 +235,36 @@ footer div {
 }
 
 
-th {
+.chess th {
     padding: 5px;
 }
 
-td {
+.chess {
+    border: 3px solid gray;
+}
+
+.chess td {
     border: 1px solid grey;
 }
 
-tr {
+.chess tr {
     padding: 0;
     margin: 0;
 }
 
-tr:nth-child(odd)  td:nth-child(odd),
-tr:nth-child(even) td:nth-child(even) {
+.chess tr:nth-child(odd)  td:nth-child(odd),
+.chess tr:nth-child(even) td:nth-child(even) {
     background-color: white;
 }
 
-tr:nth-child(even)  td:nth-child(odd),
-tr:nth-child(odd) td:nth-child(even) {
+.chess tr:nth-child(even)  td:nth-child(odd),
+.chess tr:nth-child(odd) td:nth-child(even) {
     background-color:black;
 }
 
 .chess {
     background: #CD853F;
     font-family: 'Playfair Display SC', serif;
-    border: 3px solid gray;
 }
 
 .circle {
@@ -291,4 +294,21 @@ tr:nth-child(odd) td:nth-child(even) {
 .main-menu a:hover {
     border-top: 4px solid rgb(255,255,0);
     border-bottom: 4px solid rgb(255,255,0);
+}
+
+.table-chess {
+    display: none;
+}
+
+.team-logos  td{
+    width: 60px;
+    height:50px;
+}
+
+.team-logos {
+    margin-top: 5px;
+}
+
+.first-block {
+    box-sizing: border-box;
 }
