@@ -229,6 +229,10 @@ body {
         width: 4vh;
         height: 4vh;
     }
+
+    .team-table {
+        display: none;
+    }
 }
 
 @media screen and (min-width: 1050px) {
@@ -316,6 +320,7 @@ footer div {
     justify-content: center;
     font-family: 'Indie Flower', cursive;
     font-size: 27px;
+    border: 1px solid black;
 }
 
 .line {
@@ -392,4 +397,18 @@ footer div {
 
 .name-stat {
     width: 100px;
+}
+
+.indicator {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.form-group {
+    margin-top: 25px;
+}
+
+.form-control {
+    width: 250px;
 }

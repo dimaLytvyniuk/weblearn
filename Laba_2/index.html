@@ -4,6 +4,42 @@
     <head>
         <title>Premier League</title>
         <link href="styles.css" type="text/css" rel="stylesheet">
+        <script>
+             function validateForm() {
+                var username = document.forms["formUser"]["username"].value;
+                var email = document.forms["formUser"]["usermail"].value;
+                var password = document.forms["formUser"]["password"].value;
+                var value = 'Перша '
+
+                if (username.charAt(0) >= 'A'  && username.charAt(0) <= 'Z')
+                    value += 'велика літера. ';
+                else
+                    value += 'мала літера. '
+                
+                value += '\nУ полі ім\'я ';
+
+                if (username.length < 5)
+                    value += 'менше п\'яти літер. ';
+                else
+                    value += 'більше п\'яти літер. ';
+
+                value += '\nУ полі email ';
+
+                if (email.length < 5)
+                    value += 'менше п\'яти символів. ';
+                else
+                    value += 'більше п\'яти символів. ';
+
+                value += '\nУ полі Пароль ';
+
+                if (password.length < 5)
+                    value += 'менше п\'яти символів. ';
+                else
+                    value += 'більше п\'яти символів. '; 
+
+                alert(value);
+            }
+        </script>
    </head>
     <body>
         <div class="big-box">
@@ -206,6 +242,26 @@
                                 </table>
                                 </center>
                             </div>
+                                <center style="margin-bottom: 25px;">Індикатор наступного кроку</center> 
+                                <div class="indicator" id="meinecontainer">
+                                    <div class="circle" id ="firstCircle"><div id="firstStep">1</div></div>
+                                    <div class="line">
+                                        <div class="line-piece"></div>
+                                    </div>
+                                    <div class="circle" id="secondCircle"><div>2</div></div>
+                                    <div class="line">
+                                        <div class="line-piece"></div>
+                                    </div>
+                                    <div class="circle" id="thirdCircle"><div>3</div></div>
+                                </div> 
+                                <form name="formUser" class="form-group" onsubmit="return validateForm()">
+                                        <center>
+                                        <input autofocus class="form-control" name="username" placeholder="Ім'я" type="text"/><br>
+                                        <input autofocus class="form-control" name="usermail" placeholder="email" type="email"/><br>
+                                        <input class="form-control" name="password" placeholder="Пароль" type="password"/><br>
+                                        <button type="submit" class="btn-log">Log In</button>
+                                        </center>
+                                </form>
                         </div>
                         <div class="second-block">
                             <table class="team-table">
@@ -358,5 +414,9 @@
                 <div>&#169 PREMIER LEAGUE 2017</div>
             </footer>
         </div>
+
+	    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+	    <script type="text/javascript" src="js/jqueryrotate.2.1.js"></script>
+        <script src='js/rotate.js'></script>
     </body>
 </html>
