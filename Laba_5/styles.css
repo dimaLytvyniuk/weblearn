@@ -1,0 +1,427 @@
+@font-face {
+    font-family: 'Comfortaa-Regular';
+    src: url('fonts/Comfortaa-Regular.ttf'); 
+}
+
+@font-face {
+    font-family: 'Indie Flower';
+    src: url('fonts/IndieFlower.ttf'); 
+}
+
+@font-face {
+    font-family: 'Comfortaa-Light';
+    src: url('fonts/Comfortaa-Light.ttf'); 
+}
+
+@font-face {
+    font-family: 'Comfortaa-Bold';
+    src: url('fonts/Comfortaa-Bold.ttf'); 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(1,254,135);
+    overflow: auto;
+    width: 100%;
+    height: 100%;
+    font-family: 'Comfortaa-Regular',cursive;
+}
+
+.header {
+    background-color: rgb(255,1,91);
+    z-index: 1000;
+    position: fixed;
+    overflow-y: auto;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+#logo {
+    display: block;
+    margin: 0 auto;
+}
+
+.main-part {
+    display: flex;
+    flex-direction: row;
+    height: 92vh;
+}
+
+@media screen and (min-width: 800px) {
+    .menu {
+        background-color: white;
+        width: 170px;
+        height: 300px;
+        margin-top: 25px;
+        margin-left: 25px;
+        border: 2px solid #8470FF;
+        border-radius: 15px;
+    }
+
+    .menu-box {
+        background-image: url(Premier-League-logo-2016_4.png);
+        background-repeat:no-repeat;
+        background-position: center center;
+        height: 300px;
+        border-radius: 15px;
+    }
+
+    .main-menu {
+        /*padding: 40px 25px 40px 25px;*/
+        padding-top: 40px;
+        list-style: none;
+        width: 150px;
+        height: 340px;    
+    }
+
+    .main-menu li {
+        text-align: center;
+    }
+
+    .main-menu a {
+        display: block;
+        margin-bottom: -1px;
+        padding: 8px 14px;
+        text-decoration: none;
+        color: rgb(255,1,91);
+        font-size: 19px;
+    }
+
+    .big-block {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        height: 92vh;
+        min-height: 80px;
+        margin-left: 20px;
+    }
+
+    .content {
+        width: 70%;
+        padding: 30px;
+        box-sizing: border-box;
+    }
+
+    .second-block {
+        width: 30%;
+        display: flex;
+        flex-direction: row;
+        padding: 20px;
+    }
+
+    .big-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: stretch;
+        min-width: 100%;
+        min-height: 100%;
+        overflow: auto;
+        position: relative;
+        top: 120px;
+        z-index: 999;
+    }
+
+    .mini-block {
+        display: flex;
+        height: 84vh;
+    }
+
+    .chess td{
+        width: 6vh;
+        height: 6vh;
+    }
+}
+
+
+
+@media screen and (max-width: 800px) {
+    .menu {
+        /*background-color: white;
+        width: 226px;
+        height: 300px;
+        margin-top: 25px;
+        margin-left: 25px;
+        border: 2px solid #8470FF;
+        border-radius: 15px;*/
+
+        background-color: rgba(255, 255, 255, 0.9);
+        overflow-y: auto;
+        position: fixed;
+        left: 0;
+        top: 120px;
+        text-align: center;
+        width: 100%;
+        z-index: 1000;
+    }
+
+    .main-menu ul {
+        padding: 0;
+        margin: 0;
+    }
+
+    .main-menu {
+        list-style: none;
+    }
+
+    .main-menu li {
+        text-align: center;
+        display: inline-block;
+        font-size: 14px;
+        margin: 16px 12px;
+        text-transform: uppercase;
+    }
+
+    .main-menu a {
+        text-decoration: none; 
+        color: rgb(255,1,91);
+    }
+
+    .big-block {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: 92vh;
+        min-height: 80px;
+        margin-left: 20px;
+        top: 50px;
+        position: relative;
+    }
+
+    .content {
+        width: 100%;
+        padding: 30px;
+        box-sizing: border-box;
+    }
+
+    .second-block {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        padding: 20px;
+    }
+
+    .big-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: stretch;
+        min-width: 100%;
+        min-height: 100%;
+        overflow: auto;
+        position: relative;
+        top: 120px;
+        z-index: 999;
+    }
+
+    .mini-block {
+        display: flex;
+        flex-direction: column;
+        height: 90vh;
+    }
+
+    .chess td{
+        width: 4vh;
+        height: 4vh;
+    }
+
+    .team-table {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1050px) {
+    .logos-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .first-block {
+        height: 10vh;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .logos-container {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .logos-half div {
+        width: 60px;
+    }
+
+    .first-block {
+        height: 15vh;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .img_content img{
+        width: 550px;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .img_content img{
+        width: auto;
+    }
+}
+
+footer {
+    height: 8vh;
+    min-height: 30px;
+    background-color: #8470FF;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+footer div {
+    text-align: center;
+    font-size: 12px;
+}
+
+
+.chess th {
+    padding: 5px;
+}
+
+.chess {
+    border: 3px solid gray;
+}
+
+.chess td {
+    border: 1px solid grey;
+}
+
+.chess tr {
+    padding: 0;
+    margin: 0;
+}
+
+.chess tr:nth-child(odd)  td:nth-child(odd),
+.chess tr:nth-child(even) td:nth-child(even) {
+    background-color: white;
+}
+
+.chess tr:nth-child(even)  td:nth-child(odd),
+.chess tr:nth-child(odd) td:nth-child(even) {
+    background-color:black;
+}
+
+.chess {
+    background: #CD853F;
+    font-family: 'Playfair Display SC', serif;
+}
+
+.circle {
+    width: 6vh;
+    height: 6vh;
+    border-radius: 100%;
+    background: #00BFFF;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Indie Flower', cursive;
+    font-size: 27px;
+    border: 1px solid black;
+}
+
+.line {
+    height: 6vh;
+    width: 12vh;
+}
+
+.line-piece {
+    height:3vh;
+    width: 12vh;
+    border-bottom: 2px solid #00BFFF;
+}
+
+.main-menu a:hover {
+    border-top: 4px solid rgb(255,255,0);
+    border-bottom: 4px solid rgb(255,255,0);
+}
+
+.table-chess {
+    display: none;
+}
+
+.team-logos  td{
+    width: 60px;
+    height:50px;
+}
+
+.team-logos {
+    margin-top: 5px;
+}
+
+.first-block {
+    box-sizing: border-box;
+}
+
+.logos-container {
+    display: flex;
+}
+
+.logos-half {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-grow: 1;
+    margin-top: 12px;
+}
+
+.menu-box {
+    font-family: 'Comfortaa-Regular';
+}
+
+.team-table {
+    font-size: 12px;
+}
+
+.team-table td {
+    height: 28px;
+}
+
+.team-table tr{
+    border-bottom: 0.5px solid grey;
+}
+
+.num-stat,
+.games-stat,
+.points-stat
+ {
+    width: 25px;
+}
+
+.logo-stat {
+    width: 30px;
+}
+
+.name-stat {
+    width: 100px;
+}
+
+.indicator {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.form-group {
+    margin-top: 25px;
+    display: none;
+}
+
+.form-control {
+    width: 250px;
+}

@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Premier League</title>
+        <link href="styles.css" type="text/css" rel="stylesheet">
+         <script>
+             function validateForm() {
+                var username = document.forms["formUser"]["username"].value;
+                var email = document.forms["formUser"]["usermail"].value;
+                var password = document.forms["formUser"]["password"].value;
+                var value = 'Перша '
+
+                if (username.charAt(0) >= 'A'  && username.charAt(0) <= 'Z')
+                    value += 'велика літера. ';
+                else
+                    value += 'мала літера. '
+                
+                value += '\nУ полі ім\'я ';
+
+                if (username.length < 5)
+                    value += 'менше п\'яти літер. ';
+                else
+                    value += 'більше п\'яти літер. ';
+
+                value += '\nУ полі email ';
+
+                if (email.length < 5)
+                    value += 'менше п\'яти символів. ';
+                else
+                    value += 'більше п\'яти символів. ';
+
+                value += '\nУ полі Пароль ';
+
+                if (password.length < 5)
+                    value += 'менше п\'яти символів. ';
+                else
+                    value += 'більше п\'яти символів. '; 
+
+                alert(value);
+            }
+        </script>
+   </head>
+    <body>
+        <div class="big-box">
+            <div class="header">
+                <img src = "premier_league_logo_1.jpg" alt="Premier League logo" id="logo"/>
+            </div>
+            <div class="main-part">
+                <div class="menu">
+                    <div class="menu-box">
+                        <ul class="main-menu">
+                            <li><a href="#">Таблиця</a></li>
+                            <li><a href="#">Календар матчів</a></li>
+                            <li><a href="statistic/statistic.php">Статистика</a></li>
+                            <li><a href="log_in/log_in.php">Вхід</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="big-block">
+                    <div class="first-block">
+                        <div class="logos-container">
+                            <div class="logos-half">
+                                <a href="arsenal/arsenal.html" target="_blank">
+                                    <div> <img src = "logos/Arsenal_FC_1.png" alt="Arsenal" /></div>
+                                </a>
+                                <a href="burnley/burnley.html" target="_blank">
+                                    <div><img src = "logos/Burnley_FC_1.png" alt="Burnley" /></div>
+                                </a>
+                                <a href="bournemouth/bornemouth.html" target="_blank">
+                                    <div><img src = "logos/Bournemouth_FC_1.png" alt="Bournemouth" /></div>
+                                </a>
+                                <a href="chelsea/chelsea.html" target="_blank">
+                                    <div><img src = "logos/Chelsea_FC_1.png" alt="Chelsea"/></div>
+                                </a>
+                                <a href="crystal_palace/crystal_palace.html" target="_blank">
+                                    <div><img src = "logos/Crystal_Palace_FC_1.png" alt="Crystal" /></div>
+                                </a>
+                                <a href="everton/everton.html" target="_blank">
+                                    <div><img src = "logos/Everton_FC_1.png" alt="Everton" /></div>
+                                </a>
+                                <a href="hull_city/hull_city.html" target="_blank">
+                                    <div><img src = "logos/Hull_City_FC_1.png" alt="Hull" /></div>
+                                </a>
+                                <a href="leicster/leicster.html" target="_blank">
+                                    <div><img src = "logos/Leicester_City_FC_1.png" alt="Leicster" /></div>
+                                </a>
+                                <a href="liverpool/liverpool.html" target="_blank">
+                                    <div><img src = "logos/Liverpool_FC_1.png" alt="Liverpool" /></div>
+                                </a>
+                                <a href="manchester_city/munchester_city.html" target="_blank">
+                                    <div><img src = "logos/Manchester_City_FC_1.png" alt="Manchester C" /></div>
+                                </a>
+                            </div>
+                            <div class="logos-half">
+                                <a href="manchester_united/munchester_united.html" target="_blank">
+                                    <div><img src = "logos/Manchester_United_FC_1.png" alt="Manchester U" /></div>
+                                </a>
+                                <a href="middlesbrough/middlesbrough.html" target="_blank">
+                                    <div><img src = "logos/Middlesbrough-FC_1.png" alt="Middlesbrough" /></div>
+                                </a>
+                                <a href="southampton/southampton.html" target="_blank">
+                                    <div><img src = "logos/Southampton-FC_1.png" alt="Southampton" /></div>
+                                </a>
+                                <a href="stoke_city/stoke_city.html" target="_blank">
+                                    <div><img src = "logos/Stoke_City_FC_1.png" alt="Stoke City" /></div>
+                                </a>
+                                <a href="sunderland/sunderland.html" target="_blank">
+                                    <div><img src = "logos/Sunderland_FC_1.png" alt="Sunderland" /></div>
+                                </a>
+                                <a href="swansea/swansea.html" target="_blank">
+                                    <div><img src = "logos/Swansea_FC_1.png" alt="Swansea" /></div>
+                                </a>
+                                <a href="tottenham/tottenham.html" target="_blank">
+                                    <div><img src = "logos/Tottenham_Hotspur_FC_1.png" alt="Tottenham" /></div>
+                                </a>
+                                <a href="watford/watford.html" target="_blank">
+                                    <div><img src = "logos/Watford-FC_1.png" alt="Watford" /></div>
+                                </a>
+                                <a href="west_bromwich/west_bromwich.html" target="_blank">
+                                    <div><img src = "logos/West_Bromwich_Albion_FC_1.png" alt="West Bromwich Albion" /></div>
+                                </a>
+                                <a href="west_ham/west_ham.html" target="_blank">
+                                    <div><img src = "logos/West_Ham_United_FC_1.png" alt="West Ham United" /></div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mini-block">
+                        <div class="content">
+                                <div class="img_content">
+                                    <center>
+                                        <img src = "Chelsea-Champions.jpg" alt="Champions"/>
+                                    </center>
+                                </div>
+                        </div>
+                        <div class="second-block">
+                            <table class="team-table">
+                                <tr>
+                                    <td class="num-stat">1</td>
+                                    <td class="logo-stat"></td>
+                                    <td class="name-stat">Chelsea</td>
+                                    <td class="games-stat">32</td>
+                                    <td class="points-stat">75</td>
+                                </tr>
+                                <tr>
+                                    <td class="num-stat">2</td>
+                                    <td class="logo-stat"></td>
+                                    <td class="name-stat">Spurs</td>
+                                    <td class="games-stat">32</td>
+                                    <td class="points-stat">71</td>
+                                </tr>
+                                <tr>
+                                    <td class="num-stat">3</td>
+                                    <td class="logo-stat"></td>
+                                    <td class="name-stat">Liverpool</td>
+                                    <td class="games-stat">33</td>
+                                    <td class="points-stat">66</td>
+                                </tr>                         
+                                <tr>
+                                    <td class="num-stat">4</td>
+                                    <td class="logo-stat"></td>
+                                    <td class="name-stat">Man City</td>
+                                    <td class="games-stat">32</td>
+                                    <td class="points-stat">64</td>
+                                </tr>
+                                <tr>
+                                    <td class="num-stat">5</td>
+                                    <td class="logo-stat"></td>
+                                    <td class="name-stat">Man Utd</td>
+                                    <td class="games-stat">31</td>
+                                    <td class="points-stat">57</td>
+                                </tr>
+                                <tr>
+                                    <td class="num-stat">6</td>
+                                    <td class="logo-stat"></td>
+                                    <td class="name-stat">Arsenal</td>
+                                    <td class="games-stat">31</td>
+                                    <td class="points-stat">57</td>
+                                </tr>
+                                <tr>
+                                    <td class="num-stat">7</td>
+                                    <td class="logo-stat"></td>
+                                    <td class="name-stat">Everton</td>
+                                    <td class="games-stat">33</td>
+                                    <td class="points-stat">57</td>
+                                </tr>                              
+                                <tr>
+                                    <td class="num-stat">8</td>
+                                    <td class="logo-stat"></td>
+                                    <td class="name-stat">West Brom</td>
+                                    <td class="games-stat">33</td>
+                                    <td class="points-stat">44</td>
+                                </tr>
+                                <tr>
+                                    <td class="num-stat">9</td>
+                                    <td class="logo-stat"></td>
+                                    <td class="name-stat">Southampton</td>
+                                    <td class="games-stat">31</td>
+                                    <td class="points-stat">40</td>
+                                </tr>
+                                <tr>
+                                    <td class="num-stat">10</td>
+                                    <td class="logo-stat"></td>
+                                    <td class="name-stat">Watford</td>
+                                    <td class="games-stat">32</td>
+                                    <td class="points-stat">40</td>
+                                </tr>
+                                <tr>
+                                    <td class="num-stat">11</td>
+                                    <td class="logo-stat"></td>
+                                    <td class="name-stat">Stoke</td>
+                                    <td class="games-stat">33</td>
+                                    <td class="points-stat">39</td>
+                                </tr>                               
+                                <tr>
+                                    <td class="num-stat">12</td>
+                                    <td class="logo-stat"></td>
+                                    <td class="name-stat">Leicester</td>
+                                    <td class="games-stat">32</td>
+                                    <td class="points-stat">37</td>
+                                </tr>
+                                <tr>
+                                    <td class="num-stat">13</td>
+                                    <td class="logo-stat"></td>
+                                    <td class="name-stat">West Ham</td>
+                                    <td class="games-stat">33</td>
+                                    <td class="points-stat">37</td>
+                                </tr>
+                                <tr>
+                                    <td class="num-stat">14</td>
+                                    <td class="logo-stat"></td>
+                                    <td class="name-stat">Burnley</td>
+                                    <td class="games-stat">33</td>
+                                    <td class="points-stat">36</td>
+                                </tr>
+                                <tr>
+                                    <td class="num-stat">15</td>
+                                    <td class="logo-stat"></td>
+                                    <td class="name-stat">Crystal Palace</td>
+                                    <td class="games-stat">32</td>
+                                    <td class="points-stat">35</td>
+                                </tr>                             
+                                <tr>
+                                    <td class="num-stat">16</td>
+                                    <td class="logo-stat"></td>
+                                    <td class="name-stat">Bournemouth</td>
+                                    <td class="games-stat">33</td>
+                                    <td class="points-stat">35</td>
+                                </tr>            
+                                <tr>
+                                    <td class="num-stat">17</td>
+                                    <td class="logo-stat"></td>
+                                    <td class="name-stat">Hull</td>
+                                    <td class="games-stat">33</td>
+                                    <td class="points-stat">30</td>
+                                </tr>
+                                <tr>
+                                    <td class="num-stat">18</td>
+                                    <td class="logo-stat"></td>
+                                    <td class="name-stat">Swansea</td>
+                                    <td class="games-stat">33</td>
+                                    <td class="points-stat">28</td>
+                                </tr>
+                                <tr>
+                                    <td class="num-stat">19</td>
+                                    <td class="logo-stat"></td>
+                                    <td class="name-stat">Middlesbrough</td>
+                                    <td class="games-stat">32</td>
+                                    <td class="points-stat">24</td>
+                                </tr>                               
+                                <tr>
+                                    <td class="num-stat">20</td>
+                                    <td class="logo-stat"></td>
+                                    <td class="name-stat">Sunderland</td>
+                                    <td class="games-stat">32</td>
+                                    <td class="points-stat">21</td>
+                                </tr>                                                
+                            </table>                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <div>&#169 PREMIER LEAGUE 2017</div>
+            </footer>
+        </div>
+    </body>
+</html>
